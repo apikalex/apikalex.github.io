@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Википедия</title>
+  <link rel="stylesheet" href="viki.css" />
+</head>
+<body>
+  <div id="app">
+    <input type="text" v-model="query" v-on:keydown.enter="search" />
+    <div v-show="!downloading"
+      transition="shrink">
+
+
+  {{{ description }}}</div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.js"></script>
+  <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="viki.js"></script>
+</body>
+</html>

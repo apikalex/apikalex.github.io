@@ -1,0 +1,12 @@
+shrink-transition {
+  transition: transform 1s ease;
+}
+
+,shrink-enter,shrink-leave {
+  transform: scale(0);
+}
+
+input[type="text"]{
+  display: block;
+  margin: 0 auto;
+}
